@@ -1,0 +1,6 @@
+export const STORAGE = {};
+
+export const INITIALIZING_APP_STATE = {
+  LOGIN_SCREEN: 'LOGIN_SCREEN',
+  HOME_SCREEN: 'HOME_SCREEN',
+};

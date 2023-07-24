@@ -1,0 +1,52 @@
+{
+  "name": "VoneApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "relink-asset": "npx react-native-asset",
+    "start": "npx react-native start --reset-cache",
+    "node:clean": "rm -rf $TMPDIR/react-* && rm -rf ios/build/ModuleCache/* && rm -rf node_modules/ && rm -rf package-lock.json && rm -rf yarn.lock && npm cache clean -force && yarn",
+    "android:bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "android:clean": "cd android && ./gradlew clean && cd ..",
+    "android:apk-release": "cd android && ./gradlew assembleRelease && cd ..",
+    "android:apk-staging": "cd android && ./gradlew assembleReleaseStaging && cd ..",
+    "android:aab-release": "cd android && ./gradlew bundleRelease && cd ..",
+    "android:dev": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
+    "android:run": "react-native run-android",
+    "android:connect": "adb reverse tcp:8081 tcp:8081",
+    "ios:bundle": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
+    "ios:pod-clean": "cd ios && rm -rf Pods && rm -rf Podfile.lock && bundle exec pod install --repo-update && cd ..",
+    "ios:pod": "bundle exec pod install --project-directory=ios --repo-update",
+    "ios:run": "react-native run-ios",
+    "ios:run:two": "react-native run-ios --port 8082 --simulator \"iPhone 12\"",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.0",
+    "react-native-navigation": "7.32.1",
+    "react-redux": "^8.0.4",
+    "redux-saga": "^1.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native/eslint-config": "^0.72.2",
+    "@react-native/metro-config": "^0.72.9",
+    "@tsconfig/react-native": "^3.0.0",
+    "@types/react": "^18.0.24",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.2.1",
+    "eslint": "^8.19.0",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.76.7",
+    "prettier": "^2.4.1",
+    "react-test-renderer": "18.2.0",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
