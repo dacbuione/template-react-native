@@ -13,8 +13,12 @@ const flags = {
 
 export let NAVIGATION_CONSTANT;
 
-export const loadNavigationConstant = async () => {
-  NAVIGATION_CONSTANT = await Navigation.constants();
+export const loadNavigationConstant = () => {
+  NAVIGATION_CONSTANT = Navigation.constantsSync();
+  if (NAVIGATION_CONSTANT.topBarHeight <= 0) {
+    NAVIGATION_CONSTANT.topBarHeight = Platform.isPad || isTablet() ? 88 : 44;
+  }
+  console.log('###loadNavigationConstant: ', NAVIGATION_CONSTANT);
 };
 
 const height = Math.round(Dimensions.get('window').height);

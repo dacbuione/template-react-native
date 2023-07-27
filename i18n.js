@@ -28,9 +28,9 @@ export const loadDeviceLanguage = () => {
       ? NativeModules.SettingsManager.settings.AppleLocale
       : NativeModules.I18nManager.localeIdentifier;
   let foundLang;
-  if (locale && `${locale}`.includes('vi')) {
-    i18n.changeLanguage('vi');
-    foundLang = 'vi';
+  if (locale && `${locale}`.includes('tw')) {
+    i18n.changeLanguage('tw');
+    foundLang = 'tw';
   } else {
     i18n.changeLanguage('en');
     foundLang = 'en';

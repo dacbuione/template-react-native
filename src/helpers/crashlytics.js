@@ -1,19 +1,19 @@
-// import crashlytics from '@react-native-firebase/crashlytics';
+import crashlytics from '@react-native-firebase/crashlytics';
 
-// const crashLog = log => {
-//   crashlytics().log(log);
-// };
+const crashLog = log => {
+  crashlytics().log(log);
+};
 
-// const crashError = error => {
-//   crashlytics().recordError(error);
-// };
+const crashError = error => {
+  crashlytics().recordError(error);
+};
 
-// const crashForce = () => {
-//   crashlytics().crash();
-// };
+const crashForce = () => {
+  crashlytics().crash();
+};
 
-// const crashSetUserId = userId => {
-//   crashlytics().setUserId(userId);
-// };
+const crashSetUserId = userId => {
+  crashlytics().setUserId(userId);
+};
 
-// export {crashLog, crashError, crashForce, crashSetUserId};
+export {crashLog, crashError, crashForce, crashSetUserId};
