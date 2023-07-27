@@ -1,3 +1,4 @@
 import SignInScreen from './sign-in';
+import HomeScreen from './home-screen';
 
-export {SignInScreen};
+export {SignInScreen, HomeScreen};

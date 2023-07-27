@@ -2,9 +2,8 @@ import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {NativeModules, Platform} from 'react-native';
 
-import enLocales from './src/assets/locales/en';
-import twLocales from './src/assets/locales/tw';
-
+import en from '@/locales/languages/en';
+import cn from '@/locales/languages/cn';
 // not like to use this?
 // have a look at the Quick start guide
 // for passing in lng and translations on init
@@ -18,8 +17,8 @@ const languageDetector = {
 };
 
 const resources = {
-  en: enLocales,
-  tw: twLocales,
+  en: en,
+  cn: cn,
 };
 
 export const loadDeviceLanguage = () => {
@@ -28,9 +27,9 @@ export const loadDeviceLanguage = () => {
       ? NativeModules.SettingsManager.settings.AppleLocale
       : NativeModules.I18nManager.localeIdentifier;
   let foundLang;
-  if (locale && `${locale}`.includes('tw')) {
-    i18n.changeLanguage('tw');
-    foundLang = 'tw';
+  if (locale && `${locale}`.includes('cn')) {
+    i18n.changeLanguage('cn');
+    foundLang = 'cn';
   } else {
     i18n.changeLanguage('en');
     foundLang = 'en';

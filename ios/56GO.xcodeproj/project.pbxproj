@@ -12,10 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2229025A2A72D914000AF3FA /* Utilties.m in Sources */ = {isa = PBXBuildFile; fileRef = 222902592A72D8FA000AF3FA /* Utilties.m */; };
 		2265A8BD2A727D8D0075B092 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2265A8BB2A727D8D0075B092 /* GoogleService-Info-Debug.plist */; };
 		2265A8BE2A727D8D0075B092 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2265A8BC2A727D8D0075B092 /* GoogleService-Info-Staging.plist */; };
 		2265A8C02A72841A0075B092 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2265A8BF2A7284190075B092 /* GoogleService-Info-Release.plist */; };
-		2265A8C72A728D550075B092 /* Utilties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2265A8C52A728D550075B092 /* Utilties.m */; };
 		7699B88040F8A987B510C191 /* libPods-56GO-56GOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-56GO-56GOTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -41,11 +41,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = 56GO/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = 56GO/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-56GO-56GOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-56GO-56GOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222902582A72D8D1000AF3FA /* Utilties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilties.h; sourceTree = "<group>"; };
+		222902592A72D8FA000AF3FA /* Utilties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilties.m; sourceTree = "<group>"; };
 		2265A8BB2A727D8D0075B092 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		2265A8BC2A727D8D0075B092 /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
 		2265A8BF2A7284190075B092 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
-		2265A8C52A728D550075B092 /* Utilties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilties.m; sourceTree = "<group>"; };
-		2265A8C62A728D550075B092 /* Utilties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilties.h; sourceTree = "<group>"; };
 		22DD3B6F2A7176B300974C20 /* 56GOStaging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = 56GOStaging.entitlements; path = 56GO/56GOStaging.entitlements; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-56GO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-56GO.debug.xcconfig"; path = "Target Support Files/Pods-56GO/Pods-56GO.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-56GO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-56GO.release.xcconfig"; path = "Target Support Files/Pods-56GO/Pods-56GO.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,11 +98,11 @@
 		13B07FAE1A68108700A75B9A /* 56GO */ = {
 			isa = PBXGroup;
 			children = (
+				222902572A72D8B9000AF3FA /* Common */,
 				2265A8BF2A7284190075B092 /* GoogleService-Info-Release.plist */,
 				2265A8BB2A727D8D0075B092 /* GoogleService-Info-Debug.plist */,
 				2265A8BC2A727D8D0075B092 /* GoogleService-Info-Staging.plist */,
 				22DD3B6F2A7176B300974C20 /* 56GOStaging.entitlements */,
-				228894682A70FFD300C70EAF /* Common */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -113,13 +113,13 @@
 			name = 56GO;
 			sourceTree = "<group>";
 		};
-		228894682A70FFD300C70EAF /* Common */ = {
+		222902572A72D8B9000AF3FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2265A8C62A728D550075B092 /* Utilties.h */,
-				2265A8C52A728D550075B092 /* Utilties.m */,
+				222902582A72D8D1000AF3FA /* Utilties.h */,
+				222902592A72D8FA000AF3FA /* Utilties.m */,
 			);
-			path = Common;
+			name = Common;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -457,8 +457,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2229025A2A72D914000AF3FA /* Utilties.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				2265A8C72A728D550075B092 /* Utilties.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,7 +636,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = "$(inherited)  ";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -763,7 +763,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = "$(inherited)  ";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -828,7 +828,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CFLAGS = "$(inherited)  ";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",

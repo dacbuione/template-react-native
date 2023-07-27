@@ -1,5 +1,5 @@
 import {LogBox, Text, TextInput} from 'react-native';
-import {setSignInScreen} from '@/navigation';
+import {setMainScreen} from '@/navigation';
 import fcmService from '../lib/notification/fcm-service';
 import localNotificationService from '../lib/notification/local-notification-service';
 import messaging from '@react-native-firebase/messaging';
@@ -36,7 +36,7 @@ const App = async store => {
   let currentRoot;
 
   const onStoreUpdate = () => {
-    currentRoot = setSignInScreen();
+    currentRoot = setMainScreen();
   };
 
   // init notification handler

@@ -1,14 +1,14 @@
 import {Navigation} from 'react-native-navigation';
 import Screens from './configs';
 
-export const setSignInScreen = () => {
+export const setMainScreen = () => {
   Navigation.setRoot({
     root: {
       stack: {
         children: [
           {
             component: {
-              name: Screens.SignInScreen,
+              name: Screens.HomeScreen,
               options: {
                 statusBar: {
                   visible: false,
@@ -23,5 +23,5 @@ export const setSignInScreen = () => {
       },
     },
   });
-  return Screens.SignInScreen;
+  return Screens.HomeScreen;
 };

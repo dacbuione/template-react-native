@@ -5,7 +5,7 @@
  */
 import {Navigation} from 'react-native-navigation';
 import {registerScreens} from '@/navigation/configs/register-screens';
-import configStore from '@/redux/configStore.js';
+import configStore from '@/redux/config-store.js';
 import App from '@/app';
 import {SignInScreen} from '@/screens';
 import './i18n';

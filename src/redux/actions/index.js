@@ -1,3 +1,3 @@
-import * as appActions from "./appActions";
+import * as appActions from "./app-actions";
 
 export { appActions };

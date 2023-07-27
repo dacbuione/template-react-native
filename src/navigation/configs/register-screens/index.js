@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import {Navigation} from 'react-native-navigation';
 import Screens from '@/navigation/configs';
-import {SignInScreen} from '@/screens';
+import {HomeScreen, SignInScreen} from '@/screens';
 
 const registerScreen = (screenName, Component, store = null) => {
   console.log('registerScreen', screenName, <Component/>, store);
@@ -28,4 +28,5 @@ const registerScreen = (screenName, Component, store = null) => {
 
 export const registerScreens = store => {
   registerScreen(Screens.SignInScreen, SignInScreen, store);
+  registerScreen(Screens.HomeScreen, HomeScreen, store);
 };

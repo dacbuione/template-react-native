@@ -1,4 +1,4 @@
-import * as appTypes from '../types/appTypes';
+import * as appTypes from '../types/app-types';
 import {INITIALIZING_APP_STATE} from '../../commons/constants';
 const initialState = {
   initializing: INITIALIZING_APP_STATE.LOGIN_SCREEN,
