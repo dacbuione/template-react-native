@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "VoneApp.app"
-               BlueprintName = "VoneApp"
-               ReferencedContainer = "container:VoneApp.xcodeproj">
+               BuildableName = "56GO.app"
+               BlueprintName = "56GO"
+               ReferencedContainer = "container:56GO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "VoneAppTests.xctest"
-               BlueprintName = "VoneAppTests"
-               ReferencedContainer = "container:VoneApp.xcodeproj">
+               BuildableName = "56GOTests.xctest"
+               BlueprintName = "56GOTests"
+               ReferencedContainer = "container:56GO.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "VoneApp.app"
-            BlueprintName = "VoneApp"
-            ReferencedContainer = "container:VoneApp.xcodeproj">
+            BuildableName = "56GO.app"
+            BlueprintName = "56GO"
+            ReferencedContainer = "container:56GO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "VoneApp.app"
-            BlueprintName = "VoneApp"
-            ReferencedContainer = "container:VoneApp.xcodeproj">
+            BuildableName = "56GO.app"
+            BlueprintName = "56GO"
+            ReferencedContainer = "container:56GO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

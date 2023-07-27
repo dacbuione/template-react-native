@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "473845152728",
+    "project_id": "vone-staging-e0be2",
+    "storage_bucket": "vone-staging-e0be2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473845152728:android:46929a780c3f09025890ad",
+        "android_client_info": {
+          "package_name": "com.fivesixgo.app.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473845152728-r9u29q3dqi8bltvla63bf2l1jb2pe1o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBemL84J7rz-Ohu4WiMsCskldymXZpaRvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473845152728-r9u29q3dqi8bltvla63bf2l1jb2pe1o2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "473845152728-45lf010i17nivlfvtiugmri67jqhm2uq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fivesixgo.app.debug"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

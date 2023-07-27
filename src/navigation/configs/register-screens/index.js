@@ -5,6 +5,7 @@ import Screens from '@/navigation/configs';
 import {SignInScreen} from '@/screens';
 
 const registerScreen = (screenName, Component, store = null) => {
+  console.log('registerScreen', screenName, <Component/>, store);
   if (store) {
     Navigation.registerComponent(
       screenName,

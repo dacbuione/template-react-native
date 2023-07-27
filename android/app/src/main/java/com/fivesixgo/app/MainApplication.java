@@ -1,4 +1,4 @@
-package com.voneapp;
+package com.fivesixgo.app;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

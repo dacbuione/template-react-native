@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "297263431234",
+    "project_id": "vone-d1db4",
+    "storage_bucket": "vone-d1db4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297263431234:android:dbd501da91bd52c7d037db",
+        "android_client_info": {
+          "package_name": "com.fivesixgo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297263431234-3ph0iurosrfm3darqe5fc2tk3h7o79sc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzLt7rqgNSsi06Om1Z7x-_3Rp8Rqv6eKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297263431234-3ph0iurosrfm3darqe5fc2tk3h7o79sc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "297263431234-16l2rk40iitbv8rsl0s0kopggshvekjk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fivesixgo.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

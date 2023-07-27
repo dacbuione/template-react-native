@@ -11,28 +11,11 @@ import {SignInScreen} from '@/screens';
 import './i18n';
 import {setDefaultOptions} from '@/helpers';
 
-// const store = configStore();
-// registerScreens(store);
+const store = configStore();
+registerScreens(store);
 
-// Navigation.events().registerAppLaunchedListener(async () => {
-//   setDefaultOptions();
-//   // start app
-//   await App(store);
-// });
-
-Navigation.registerComponent('com.myApp.WelcomeScreen', () => SignInScreen);
-Navigation.events().registerAppLaunchedListener(() => {
-  Navigation.setRoot({
-    root: {
-      stack: {
-        children: [
-          {
-            component: {
-              name: 'com.myApp.WelcomeScreen',
-            },
-          },
-        ],
-      },
-    },
-  });
+Navigation.events().registerAppLaunchedListener(async () => {
+  setDefaultOptions();
+  // start app
+  await App(store);
 });

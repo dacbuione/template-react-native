@@ -25,11 +25,14 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'VoneApp' do
+target '56GO' do
   config = use_native_modules!
-
+  $RNFirebaseAsStaticFramework = true
+  $RNFirebaseAnalyticsWithoutAdIdSupport=true
   # Flags change depending on the env values.
   flags = get_default_flags()
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -45,7 +48,7 @@ target 'VoneApp' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'VoneAppTests' do
+  target '56GOTests' do
     inherit! :complete
     # Pods for testing
   end
